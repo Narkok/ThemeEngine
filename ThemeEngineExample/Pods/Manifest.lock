@@ -1,0 +1,16 @@
+PODS:
+  - ThemeEngine (1.0.0)
+
+DEPENDENCIES:
+  - ThemeEngine (from `../ThemeEngine`)
+
+EXTERNAL SOURCES:
+  ThemeEngine:
+    :path: "../ThemeEngine"
+
+SPEC CHECKSUMS:
+  ThemeEngine: e606312dd0b8cc82063f82d98f72b83f0f4dc645
+
+PODFILE CHECKSUM: 769123d66c39cfe2497eb5ccdb8cb83e02623f61
+
+COCOAPODS: 1.12.1

@@ -1,0 +1,7 @@
+
+target 'ThemeEngineExample' do 
+
+    use_frameworks!
+
+    pod 'ThemeEngine', :path => '../ThemeEngine'
+end
