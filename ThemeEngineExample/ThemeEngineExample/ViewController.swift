@@ -26,8 +26,6 @@ class ViewController: UIViewController {
             ThemeEngine.apply(theme: Themes.darkTheme, animationDuration: 0.2)
         }
     }
-
-
 }
 
 

@@ -1,7 +1,8 @@
+platform :ios, '14.0'
 
 target 'ThemeEngineExample' do 
 
     use_frameworks!
 
-    pod 'ThemeEngine', :path => '../ThemeEngine'
+    pod 'ThemeEngine'
 end
