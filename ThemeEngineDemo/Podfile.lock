@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (5.6.0)
+  - ThemeEngine (1.0.0)
+
+DEPENDENCIES:
+  - SnapKit
+  - ThemeEngine
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - ThemeEngine
+
+SPEC CHECKSUMS:
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  ThemeEngine: e606312dd0b8cc82063f82d98f72b83f0f4dc645
+
+PODFILE CHECKSUM: b7959c749c5dc6df0fdb313d9d97948d13170b85
+
+COCOAPODS: 1.12.1

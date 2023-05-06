@@ -1,0 +1,6 @@
+framework module Pods_ThemeEngineDemo {
+  umbrella header "Pods-ThemeEngineDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

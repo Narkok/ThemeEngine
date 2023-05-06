@@ -1,0 +1,10 @@
+platform :ios, '14.0'
+
+target 'ThemeEngineDemo' do 
+
+    use_frameworks!
+
+    pod 'ThemeEngine'
+    pod 'SnapKit'
+    
+end
