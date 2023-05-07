@@ -25,7 +25,7 @@ class DemoViewController: UIViewController {
     
     private func setupNavBar() {
         let settingsItem = UIBarButtonItem(image: UIImage(systemName: "gearshape.fill"), style: .plain, target: nil, action: nil)
-        settingsItem.setThemeColor(ThemeKeys.text, for: \UIBarButtonItem.tintColor)
+        settingsItem.setThemeColor(ColorKey.text, for: \UIBarButtonItem.tintColor)
         navigationItem.setRightBarButton(settingsItem, animated: false)
     }
     

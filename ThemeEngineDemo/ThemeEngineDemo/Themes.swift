@@ -8,7 +8,7 @@
 import Foundation
 import ThemeEngine
 
-enum ThemeKeys: ThemeEngine.ColorKey {
+enum ColorKey: ThemeEngine.ColorKey {
     
     case accent
     case background
@@ -17,23 +17,23 @@ enum ThemeKeys: ThemeEngine.ColorKey {
     case buttons
 }
 
-let lightTheme = ThemeEngine.Theme<ThemeKeys>(colors: [
+let lightTheme = ThemeEngine.Theme<ColorKey>(colors: [
     .accent: .systemMint,
     .background: .white,
-    .secondary: UIColor(white: 0.94, alpha: 1),
+    .secondary: .lightGray,
     .text: .black,
     .buttons: .systemBlue
 ])
 
-let darkTheme = ThemeEngine.Theme<ThemeKeys>(colors: [
+let darkTheme = ThemeEngine.Theme<ColorKey>(colors: [
     .accent: .clear,
     .background: .black,
-    .secondary: UIColor(white: 0.15, alpha: 1),
+    .secondary: .darkGray,
     .text: .white,
-    .buttons: UIColor(red: 0.96, green: 0.73, blue: 0.17, alpha: 1.00)
+    .buttons: .systemYellow
 ])
 
-let pinkTheme = ThemeEngine.Theme<ThemeKeys>(colors: [
+let pinkTheme = ThemeEngine.Theme<ColorKey>(colors: [
     .accent: UIColor(red: 0.73, green: 0.21, blue: 0.68, alpha: 1.00),
     .background: UIColor(red: 0.93, green: 0.91, blue: 0.97, alpha: 1.00),
     .secondary: UIColor(red: 0.91, green: 0.62, blue: 0.96, alpha: 1.00),

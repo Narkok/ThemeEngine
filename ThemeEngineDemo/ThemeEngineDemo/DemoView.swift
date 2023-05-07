@@ -31,7 +31,7 @@ final class DemoView: UIView {
         button.configuration?.subtitle = "No animation"
         button.configuration?.titleAlignment = .center
         button.configuration?.cornerStyle = .small
-        button.setThemeColor(ThemeKeys.buttons, for: \UIButton.tintColor)
+        button.setThemeColor(ColorKey.buttons, for: \UIButton.tintColor)
         return button
     }()
     
@@ -42,7 +42,7 @@ final class DemoView: UIView {
         button.configuration?.subtitle = "Fast animation"
         button.configuration?.titleAlignment = .center
         button.configuration?.cornerStyle = .small
-        button.setThemeColor(ThemeKeys.buttons, for: \UIButton.tintColor)
+        button.setThemeColor(ColorKey.buttons, for: \UIButton.tintColor)
         return button
     }()
     
@@ -53,7 +53,7 @@ final class DemoView: UIView {
         button.configuration?.subtitle = "Slow animation"
         button.configuration?.titleAlignment = .center
         button.configuration?.cornerStyle = .small
-        button.setThemeColor(ThemeKeys.buttons, for: \UIButton.tintColor)
+        button.setThemeColor(ColorKey.buttons, for: \UIButton.tintColor)
         return button
     }()
     
@@ -61,13 +61,13 @@ final class DemoView: UIView {
         let imageView = UIImageView(image: .init(named: "avatar"))
         imageView.layer.cornerRadius = 12
         imageView.layer.masksToBounds = true
-        imageView.setThemeColor(ThemeKeys.accent, for: \UIView.backgroundColor)
+        imageView.setThemeColor(ColorKey.accent, for: \UIView.backgroundColor)
         return imageView
     }()
     
     private let topHeaderView: UIView = {
         let view = UIView()
-        view.setThemeColor(ThemeKeys.secondary, for: \UIView.backgroundColor)
+        view.setThemeColor(ColorKey.secondary, for: \UIView.backgroundColor)
         return view
     }()
     
@@ -75,7 +75,7 @@ final class DemoView: UIView {
         let label = UILabel()
         label.text = "Narek Stepanyan"
         label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
-        label.setThemeColor(ThemeKeys.text, for: \UILabel.textColor)
+        label.setThemeColor(ColorKey.text, for: \UILabel.textColor)
         return label
     }()
     
@@ -83,7 +83,7 @@ final class DemoView: UIView {
         let label = UILabel()
         label.text = "Narkok"
         label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
-        label.setThemeColor(ThemeKeys.text, for: \UILabel.textColor)
+        label.setThemeColor(ColorKey.text, for: \UILabel.textColor)
         return label
     }()
     
@@ -179,17 +179,17 @@ final class DemoView: UIView {
         themesStackView.addArrangedSubview(darkThemeButton)
         themesStackView.addArrangedSubview(pinkThemeButton)
         
-        setThemeColor(ThemeKeys.background, for: \UIView.backgroundColor)
+        setThemeColor(ColorKey.background, for: \UIView.backgroundColor)
     }
     
     static private func createView(title: String, value: String, image: UIImage?) -> UIView {
         let view = UIView()
         view.layer.cornerRadius = 12
         view.layer.cornerCurve = .continuous
-        view.setThemeColor(ThemeKeys.secondary, for: \UIView.backgroundColor)
+        view.setThemeColor(ColorKey.secondary, for: \UIView.backgroundColor)
         
         let iconView = UIImageView(image: image)
-        iconView.setThemeColor(ThemeKeys.text, for: \UIImageView.tintColor)
+        iconView.setThemeColor(ColorKey.text, for: \UIImageView.tintColor)
         
         view.addSubview(iconView)
         iconView.snp.makeConstraints {
@@ -200,7 +200,7 @@ final class DemoView: UIView {
         let titleLabel = UILabel()
         titleLabel.text = title
         titleLabel.font = UIFont.systemFont(ofSize: 24, weight: .semibold)
-        titleLabel.setThemeColor(ThemeKeys.text, for: \UILabel.textColor)
+        titleLabel.setThemeColor(ColorKey.text, for: \UILabel.textColor)
         
         view.addSubview(titleLabel)
         titleLabel.snp.makeConstraints {
@@ -211,7 +211,7 @@ final class DemoView: UIView {
         let valueLabel = UILabel()
         valueLabel.text = value
         valueLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
-        valueLabel.setThemeColor(ThemeKeys.text, for: \UILabel.textColor)
+        valueLabel.setThemeColor(ColorKey.text, for: \UILabel.textColor)
         
         view.addSubview(valueLabel)
         valueLabel.snp.makeConstraints {
