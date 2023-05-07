@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  ThemeEngineDemo
 //
-//  Created by Narek Stepanyan on 06.05.2023.
+//  Created by Narek Stepanyan.
 //
 
 import UIKit
@@ -24,22 +24,22 @@ class DemoViewController: UIViewController {
     }
     
     private func setupNavBar() {
-        let settingsItem = UIBarButtonItem(customView: UIImageView(image: UIImage(systemName: "gearshape.fill")))
-        settingsItem.customView?.setThemeColor(ThemeKeys.text, for: \UIImageView.tintColor)
+        let settingsItem = UIBarButtonItem(image: UIImage(systemName: "gearshape.fill"), style: .plain, target: nil, action: nil)
+        settingsItem.setThemeColor(ThemeKeys.text, for: \UIBarButtonItem.tintColor)
         navigationItem.setRightBarButton(settingsItem, animated: false)
     }
     
     private func bind() {
         rootView.onLightButtonTap = {
-            ThemeEngine.apply(theme: Themes.light)
+            ThemeEngine.shared.apply(theme: lightTheme)
         }
         
         rootView.onDarkButtonTap = {
-            ThemeEngine.apply(theme: Themes.dark, animationDuration: 0.2)
+            ThemeEngine.shared.apply(theme: darkTheme, animationDuration: 0.2)
         }
         
         rootView.onPinkButtonTap = {
-            ThemeEngine.apply(theme: Themes.pink, animationDuration: 0.6)
+            ThemeEngine.shared.apply(theme: pinkTheme, animationDuration: 0.6)
         }
     }
 }

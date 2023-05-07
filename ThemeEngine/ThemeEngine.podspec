@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ThemeEngine"
-  spec.version      = "1.0.0"
+  spec.version      = "1.1.0"
   spec.summary      = "A simple theming engine for iOS apps."
   spec.description  = <<-DESC
                         ThemeEngine is a lightweight and easy-to-use theming engine for iOS apps, 

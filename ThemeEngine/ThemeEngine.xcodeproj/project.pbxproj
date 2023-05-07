@@ -7,27 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8AE0B242A078BC0005E8294 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE0B232A078BC0005E8294 /* ThemeManager.swift */; };
+		B8AE0B262A078CD8005E8294 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE0B252A078CD8005E8294 /* Theme.swift */; };
 		B8D2ED472A053BA60040F198 /* ThemeEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = B8D2ED442A053BA60040F198 /* ThemeEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B8D2ED4E2A053BBC0040F198 /* ThemeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2ED4D2A053BBC0040F198 /* ThemeEngine.swift */; };
-		B8D2ED5E2A054C1C0040F198 /* ThemeColorKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2ED5D2A054C1C0040F198 /* ThemeColorKey.swift */; };
-		B8D2ED602A054C330040F198 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2ED5F2A054C320040F198 /* Theme.swift */; };
-		B8D2ED652A054C930040F198 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2ED642A054C930040F198 /* ThemeManager.swift */; };
-		B8D2ED692A059FC90040F198 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2ED682A059FC90040F198 /* UIView+Ext.swift */; };
-		B8D2ED6B2A05A1970040F198 /* ThemeApplicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2ED6A2A05A1970040F198 /* ThemeApplicable.swift */; };
+		B8D2ED692A059FC90040F198 /* NSObject+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2ED682A059FC90040F198 /* NSObject+Ext.swift */; };
 		B8D2ED6D2A060EAF0040F198 /* UIViewDeallocHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2ED6C2A060EAF0040F198 /* UIViewDeallocHandler.swift */; };
 		B8D2ED6F2A060FEE0040F198 /* Notification+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2ED6E2A060FEE0040F198 /* Notification+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8AE0B232A078BC0005E8294 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		B8AE0B252A078CD8005E8294 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B8D2ED412A053BA60040F198 /* ThemeEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThemeEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D2ED442A053BA60040F198 /* ThemeEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThemeEngine.h; sourceTree = "<group>"; };
 		B8D2ED4D2A053BBC0040F198 /* ThemeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeEngine.swift; sourceTree = "<group>"; };
 		B8D2ED5B2A054BEB0040F198 /* ThemeEngine.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ThemeEngine.docc; sourceTree = "<group>"; };
-		B8D2ED5D2A054C1C0040F198 /* ThemeColorKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColorKey.swift; sourceTree = "<group>"; };
-		B8D2ED5F2A054C320040F198 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
-		B8D2ED642A054C930040F198 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
-		B8D2ED682A059FC90040F198 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
-		B8D2ED6A2A05A1970040F198 /* ThemeApplicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeApplicable.swift; sourceTree = "<group>"; };
+		B8D2ED682A059FC90040F198 /* NSObject+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ext.swift"; sourceTree = "<group>"; };
 		B8D2ED6C2A060EAF0040F198 /* UIViewDeallocHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewDeallocHandler.swift; sourceTree = "<group>"; };
 		B8D2ED6E2A060FEE0040F198 /* Notification+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +39,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8AE0B272A078D15005E8294 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B8D2ED4D2A053BBC0040F198 /* ThemeEngine.swift */,
+				B8AE0B232A078BC0005E8294 /* ThemeManager.swift */,
+				B8AE0B252A078CD8005E8294 /* Theme.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		B8D2ED372A053BA60040F198 = {
 			isa = PBXGroup;
 			children = (
@@ -65,21 +71,9 @@
 				B8D2ED5B2A054BEB0040F198 /* ThemeEngine.docc */,
 				B8D2ED5C2A054BF60040F198 /* SupportingFiles */,
 				B8D2ED612A054C590040F198 /* Extensions */,
-				B8D2ED562A054BD30040F198 /* Root */,
+				B8AE0B272A078D15005E8294 /* Root */,
 			);
 			path = ThemeEngine;
-			sourceTree = "<group>";
-		};
-		B8D2ED562A054BD30040F198 /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				B8D2ED4D2A053BBC0040F198 /* ThemeEngine.swift */,
-				B8D2ED6A2A05A1970040F198 /* ThemeApplicable.swift */,
-				B8D2ED5D2A054C1C0040F198 /* ThemeColorKey.swift */,
-				B8D2ED642A054C930040F198 /* ThemeManager.swift */,
-				B8D2ED5F2A054C320040F198 /* Theme.swift */,
-			);
-			path = Root;
 			sourceTree = "<group>";
 		};
 		B8D2ED5C2A054BF60040F198 /* SupportingFiles */ = {
@@ -95,7 +89,7 @@
 			children = (
 				B8D2ED6E2A060FEE0040F198 /* Notification+Ext.swift */,
 				B8D2ED6C2A060EAF0040F198 /* UIViewDeallocHandler.swift */,
-				B8D2ED682A059FC90040F198 /* UIView+Ext.swift */,
+				B8D2ED682A059FC90040F198 /* NSObject+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -180,13 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8D2ED6D2A060EAF0040F198 /* UIViewDeallocHandler.swift in Sources */,
-				B8D2ED6B2A05A1970040F198 /* ThemeApplicable.swift in Sources */,
-				B8D2ED602A054C330040F198 /* Theme.swift in Sources */,
-				B8D2ED652A054C930040F198 /* ThemeManager.swift in Sources */,
-				B8D2ED692A059FC90040F198 /* UIView+Ext.swift in Sources */,
+				B8D2ED692A059FC90040F198 /* NSObject+Ext.swift in Sources */,
+				B8AE0B242A078BC0005E8294 /* ThemeManager.swift in Sources */,
+				B8AE0B262A078CD8005E8294 /* Theme.swift in Sources */,
 				B8D2ED4E2A053BBC0040F198 /* ThemeEngine.swift in Sources */,
 				B8D2ED6F2A060FEE0040F198 /* Notification+Ext.swift in Sources */,
-				B8D2ED5E2A054C1C0040F198 /* ThemeColorKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

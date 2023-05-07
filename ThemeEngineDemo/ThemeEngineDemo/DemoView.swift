@@ -2,7 +2,7 @@
 //  DemoView.swift
 //  ThemeEngineDemo
 //
-//  Created by Narek Stepanyan on 06.05.2023.
+//  Created by Narek Stepanyan.
 //
 
 import SnapKit
@@ -61,13 +61,13 @@ final class DemoView: UIView {
         let imageView = UIImageView(image: .init(named: "avatar"))
         imageView.layer.cornerRadius = 12
         imageView.layer.masksToBounds = true
-        imageView.setThemeColor(ThemeKeys.accent, for: \.backgroundColor)
+        imageView.setThemeColor(ThemeKeys.accent, for: \UIView.backgroundColor)
         return imageView
     }()
     
     private let topHeaderView: UIView = {
         let view = UIView()
-        view.setThemeColor(ThemeKeys.secondary, for: \.backgroundColor)
+        view.setThemeColor(ThemeKeys.secondary, for: \UIView.backgroundColor)
         return view
     }()
     
@@ -179,14 +179,14 @@ final class DemoView: UIView {
         themesStackView.addArrangedSubview(darkThemeButton)
         themesStackView.addArrangedSubview(pinkThemeButton)
         
-        setThemeColor(ThemeKeys.background, for: \.backgroundColor)
+        setThemeColor(ThemeKeys.background, for: \UIView.backgroundColor)
     }
     
     static private func createView(title: String, value: String, image: UIImage?) -> UIView {
         let view = UIView()
         view.layer.cornerRadius = 12
         view.layer.cornerCurve = .continuous
-        view.setThemeColor(ThemeKeys.secondary, for: \.backgroundColor)
+        view.setThemeColor(ThemeKeys.secondary, for: \UIView.backgroundColor)
         
         let iconView = UIImageView(image: image)
         iconView.setThemeColor(ThemeKeys.text, for: \UIImageView.tintColor)

@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  ThemeEngineDemo
 //
-//  Created by Narek Stepanyan on 06.05.2023.
+//  Created by Narek Stepanyan.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ThemeEngineDemo
 //
-//  Created by Narek Stepanyan on 06.05.2023.
+//  Created by Narek Stepanyan.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ import ThemeEngine
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        ThemeEngine.apply(theme: Themes.light)
+        ThemeEngine.shared.apply(theme: lightTheme)
         
         return true
     }
