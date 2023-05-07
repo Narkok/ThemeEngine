@@ -4,20 +4,17 @@ PODS:
 
 DEPENDENCIES:
   - SnapKit
-  - ThemeEngine (from `../ThemeEngine/`)
+  - ThemeEngine
 
 SPEC REPOS:
   trunk:
     - SnapKit
-
-EXTERNAL SOURCES:
-  ThemeEngine:
-    :path: "../ThemeEngine/"
+    - ThemeEngine
 
 SPEC CHECKSUMS:
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   ThemeEngine: 586d433300f97d19bbd73f0d9e956fce5504e29c
 
-PODFILE CHECKSUM: 407c9c9f5e027a7a3ff5c450af6bc6d383a01694
+PODFILE CHECKSUM: eb8f637bb62347e19dcf3c85d7c66d97949740a0
 
 COCOAPODS: 1.12.1
