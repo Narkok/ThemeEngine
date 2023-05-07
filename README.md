@@ -1,6 +1,5 @@
-<p align="center">
+
 <img src="https://raw.githubusercontent.com/Narkok/ThemeEngine/main/Assets/icon.png" alt="ThemeEngine" title="ThemeEngine" height="200"/>
-</p>
 
 # ThemeEngine
 
